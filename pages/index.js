@@ -98,7 +98,7 @@ export default function Home() {
                         <p class="text-gray-purple dark:text-light-blue text-lg">Faithlie, Faithlife.com Teem</p>
                         <div class="mt-1 text-sm md:text-base leading-snug text-gray dark:text-white">
                           <ul>
-                            <li class="py-1">Contributed to building and maintaining the company's flagship social web platform as a member of the Faithlife.com team, resulting in increased user engagement and retention. </li>
+                            <li class="py-1">Contributed to building and maintaining the company&apos;s flagship social web platform as a member of the Faithlife.com team, resulting in increased user engagement and retention. </li>
                             <li class="py-1">Spearheaded the integration of a new dashboard feature that streamlined access to multiple internal products.</li>
                           </ul>
                           <p class="italic font-semibold my-1">React, JavaScript, TypeScript</p>
