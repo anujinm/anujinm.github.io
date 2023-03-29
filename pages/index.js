@@ -21,10 +21,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-beige lg:p-10 md:p-20 lg:p-30 dark:bg-black-blue">
-       <div class="bg-white md:p-10 shadow-xl drop-shadow-2xl w-fit rounded-2xl md:my-10">
+       <div class="bg-white md:p-10 shadow-xl drop-shadow-2xl w-fit lg:rounded-2xl sm:rounded-none md:my-10">
         <section className="">
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">DevelopedByAnu</h1>
+            <h1 class="text-xl font-burtons collapse md:visible">DevelopedByAnu</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl text-dark-purple"/>
@@ -47,7 +47,7 @@ export default function Home() {
               </div>
             </div>
               <div className="mx-auto bg-gradient-to-b from-beige rounded-full">
-                <Image src={avatar} class="object-contain lg:w-fit lg:h-fit lg:pb-4 md:w-fit md:h-fit md:pt-6 h-64 w-64"/>
+                <Image alt="" src={avatar} class="object-contain lg:w-fit lg:h-fit lg:pb-4 md:w-fit md:h-fit md:pt-6 h-64 w-64"/>
               </div>
           </div>
         </section>
@@ -63,18 +63,19 @@ export default function Home() {
               <div className="sticky">
                 {/* cool graph of my timeline */}
 
-                <div className="ml-0 md:ml-6 lg:ml-20 sticky">
-                  <div className="relative p-10 h-full">
-                    <div className="border-rosy dark:border-red absolute h-96/100 right-1/2 border-2 border-solid text-rosy rounded-sm"></div>
-                    <div class="border-rosy dark:border-red absolute h-96/100 left-1/2 border-2 border-solid text-rosy rounded-sm"> </div>
+                <div className="ml-0 md:ml-6 lg:ml-0 sticky">
+                  <div className="relative py-10 px-5 h-full">
+                    <div className="border-rosy dark:border-red absolute h-96/100 lg:right-1/2 right-4/5 border-2 border-solid text-rosy rounded-sm"></div>
+                    <div class="border-rosy dark:border-red absolute h-96/100 lg:left-1/2 left-1/5 border-2 border-solid text-rosy rounded-sm"> </div>
                     
                     {/* First left item */}
-                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                      <div class="order-1 w-5/12"></div>
-                      <div class="order-1 w-5/12 px-1 py-4 text-right">
-                        <p class="mb-3 text-base text-red dark:text-red">March 2020 - Current</p>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full right-timeline lg:left-timeline">
+                      <div class="timeline-item-buffer"></div>
+                      <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-left-lg">
                         <h4 class="mb-3 font-bold text-lg md:text-2xl dark:text-white">Software Engineer ll</h4>
-                        <p class="text-gray-purple dark:text-light-blue text-lg">Faithlie, Logos Desktop Tem</p>
+                        <p class="text-gray-purple dark:text-light-blue text-md">Faithlife, Logos Desktop Team</p>
+                        <p class="mb-3 text-base text-red dark:text-red">March 2020 - Current</p>
+
                         <div class="mt-1 text-sm md:text-base text-gray dark:text-white">
                             <ul class="list-none">
                               <li class="py-1">Led the development of a major feature for the latest release of the Logos app, which was highly valued by customers and contributed to a record-breaking increase in profits.</li>
@@ -84,18 +85,18 @@ export default function Home() {
                           <p class="italic font-semibold my-1">C#, .NET, WPF, Objective-C, JavaScript, TypeScript, Azure, MySQL</p>
                         </div>
                       </div>
-                      <div class="rounded-full bg-white dark:bg-gray-900 text-rosy dark:text-red border-4 w-16 h-16 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                        <Image class="h-8 w-8" src={logos}/>
+                      <div class="timeline-img-container md:timeline-img-container-md lg:timeline-img-container-lg">
+                        <Image class="lg:h-8 lg:w-8 h-6 w-6" src={logos}/>
                       </div>
                     </div>
 
                     {/* Second right item */}
                     <div class="mb-8 flex justify-between items-center w-full right-timeline">
-                      <div class="order-1 w-5/12"></div>
-                      <div class="order-1 w-5/12 px-1 py-4 text-left">
-                        <p class="mb-3 text-base text-red dark:text-red">Summer 2019</p>
+                      <div class="timeline-item-buffer"></div>
+                      <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-right-lg">
                         <h4 class="mb-3 font-bold text-lg md:text-2xl dark:text-white">Software Engineering Intern</h4>
-                        <p class="text-gray-purple dark:text-light-blue text-lg">Faithlie, Faithlife.com Teem</p>
+                        <p class="text-gray-purple dark:text-light-blue text-md">Faithlife, Faithlife.com Team</p>
+                        <p class="mb-3 text-base text-red dark:text-red">Summer 2019</p>
                         <div class="mt-1 text-sm md:text-base leading-snug text-gray dark:text-white">
                           <ul>
                             <li class="py-1">Contributed to building and maintaining the company&apos;s flagship social web platform as a member of the Faithlife.com team, resulting in increased user engagement and retention. </li>
@@ -104,60 +105,66 @@ export default function Home() {
                           <p class="italic font-semibold my-1">React, JavaScript, TypeScript</p>
                         </div>
                       </div>
-                      <div class="rounded-full bg-white dark:bg-gray-900 text-rosy dark:text-red border-4 w-16 h-16 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                        <Image class="h-8 w-6" src={faithlife} />
+                      <div class="timeline-img-container  md:timeline-img-container-md lg:timeline-img-container-lg">
+                        <Image class="lg:h-8 lg:w-8 h-6 w-6" src={faithlife} />
                       </div>
                     </div>
 
                     {/* Third left item */}
-                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                      <div class="order-1 w-5/12"></div>
-                      <div class="order-1 w-5/12 px-1 py-4 text-right">
-                        <p class="mb-3 text-base text-red dark:text-red">Sept 2018 - May 2019</p>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full right-timeline lg:left-timeline">
+                      <div class="timeline-item-buffer"></div>
+                      <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-left-lg">
                         <h4 class="mb-3 font-bold text-lg md:text-2xl dark:text-white">iOS Development Intern</h4>
-                        <p class="text-gray-purple dark:text-light-blue text-lg">Olive Tree Bible Software</p>
+                        <p class="text-gray-purple dark:text-light-blue text-md">Olive Tree Bible Software</p>
+                        <p class="mb-3 text-base text-red dark:text-red">Sept 2018 - May 2019</p>
                         <div class="mt-1 text-sm md:text-base leading-snug text-gray dark:text-white">
-                          <p>Maintained and polished existing functionalities. Integrated new features into the app such as Siri Shortcuts, Vision Accessibility support, and ML model that leverages Natural Language Processing</p>
+                          <p>Integrated new features into the app such as Siri Shortcuts, Vision Accessibility support, and ML model that leverages Natural Language Processing</p>
                           <p class="italic font-semibold my-1">Objective-C, ML</p>
                         </div>
                       </div>
-                      <div class="rounded-full bg-white dark:bg-gray-900 text-rosy dark:text-red border-4 w-16 h-16 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                        <Image class="h-8 w-8" src={olive}/>
+                      <div class="timeline-img-container md:timeline-img-container-md lg:timeline-img-container-lg">
+                        <Image class="lg:h-8 lg:w-8 h-6 w-6" src={olive}/>
                       </div>
                     </div>
 
                     {/* Fourth right item */}
                     <div class="mb-8 flex justify-between items-center w-full right-timeline">
-                      <div class="order-1 w-5/12"></div>
-                      <div class="order-1 w-5/12 px-1 py-4 text-left">
-                        <p class="mb-3 text-base text-red dark:text-red">May - Aug 2018</p>
+                      <div class="timeline-item-buffer"></div>
+                      <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-right-lg">
+                        
                         <h4 class="mb-3 font-bold text-lg md:text-2xl dark:text-white">Web Development Intern</h4>
-                        <p class="text-gray-purple dark:text-light-blue text-lg">14Four</p>
+                        <p class="text-gray-purple dark:text-light-blue text-md">14Four</p>
+                        <p class="mb-3 text-base text-red dark:text-red">May - Aug 2018</p>
                         <div class="mt-1 text-sm md:text-base leading-snug text-gray dark:text-white">
-                          <p>Learned and applied new skills in the internship project including. Contributed to various client projects such as websites and banners upon request</p>
+                          <ul>
+                            <li class="py-1">Learned and applied new skills in the internship project including creating a web app for cooking recipes and measurement conversions.</li>
+                            <li class="py-1">Contributed to various client projects such as websites and banners upon request</li>
+                          </ul>
                           <p class="italic font-semibold my-1">VueJS, JavaScript, NodeJS, MySQL, AWS</p>
                         </div>
                       </div>
-                      <div class="rounded-full bg-white dark:bg-gray-900 text-rosy dark:text-red border-4 w-16 h-16 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                        <Image class="h-6 w-6" src={ffour} />
+                      <div class="timeline-img-container md:timeline-img-container-md lg:timeline-img-container-lg">
+                        <Image class="lg:h-8 lg:w-8 h-6 w-6" src={ffour} />
                       </div>
                     </div>
 
                     {/* Fifth left item */}
-                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                      <div class="order-1 w-5/12"></div>
-                      <div class="order-1 w-5/12 px-1 py-4 text-right">
-                        <p class="mb-3 text-base text-red dark:text-red">Feb - May 2018</p>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full right-timeline lg:left-timeline">
+                      <div class="timeline-item-buffer"></div>
+                      <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-left-lg">
                         <h4 class="mb-3 font-bold text-lg md:text-2xl dark:text-white">Google CodeU Program Alumna</h4>
-                        <p class="text-gray-purple dark:text-light-blue text-lg">Google Developers</p>
+                        <p class="text-gray-purple dark:text-light-blue text-md">Google Developers</p>
+                        <p class="mb-3 text-base text-red dark:text-red">Feb - May 2018</p>
                         <div class="mt-1 text-sm md:text-base leading-snug text-gray dark:text-white">
-                          <p>Collaborated with a team of 4 students and a Google Software Engineer as a mentor.
-                             Developed a chat web application for CS college students. Integrated user profile page and worked as a UI Lead</p>
+                          <ul>
+                            <li class="py-1">Collaborated with a team of 4 students and a Google Software Engineer as a mentor.</li>
+                            <li class="py-1">Developed a chat web application for CS college students. Integrated user profile page and served as a UI Lead</li>
+                          </ul>
                           <p class="italic font-semibold my-1">Java, Google Cloud Platform</p>
                         </div>
                     </div>
-                      <div class="rounded-full bg-white dark:bg-gray-900 text-rosy dark:text-red border-4 w-16 h-16 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                        <Image class="h-6 w-6" src={codeu} />
+                      <div class="timeline-img-container md:timeline-img-container-md lg:timeline-img-container-lg">
+                        <Image class="lg:h-8 lg:w-8 h-6 w-6" src={codeu} />
                       </div>
                     </div>
                   </div>

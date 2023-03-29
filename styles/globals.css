@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .timeline-img-container {
+    @apply rounded-full bg-white text-rosy dark:text-red border-4 w-12 h-12 absolute left-0 translate-y-0 transform flex items-center justify-center;
+  }
+
+  .timeline-img-container-md {
+    @apply rounded-full bg-white text-rosy dark:text-red border-4 w-16 h-16 absolute left-5 -translate-x-1/2 -translate-y-4 transform flex items-center justify-center;
+  }
+
+  .timeline-img-container-lg {
+    @apply rounded-full bg-white text-rosy dark:text-red border-4 w-16 h-16 absolute left-1/2 -translate-x-1/2 -translate-y-4 transform flex items-center justify-center;
+  }
+
+  .timeline-item-content {
+    @apply order-1 lg:w-5/12 w-fit px-1 py-4 text-left ml-10;
+  }
+  .timeline-item-content-md {
+    @apply order-1 lg:w-5/12 w-fit text-left ml-12;
+  }
+  .timeline-item-content-left-lg {
+    @apply order-1 lg:w-5/12 w-fit text-right ml-0;
+  }
+  .timeline-item-content-right-lg {
+    @apply order-1 lg:w-5/12 w-fit text-left ml-0;
+  }
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
