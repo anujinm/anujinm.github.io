@@ -25,14 +25,14 @@ export default function Home() {
         <section className="">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 class="text-xl font-burtons collapse md:visible">DevelopedByAnu</h1>
-            <ul className="flex items-center">
-              <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl text-dark-purple"/>
-              </li>
-              <li>
+            <div className="flex items-center">
+              <button onClick={() => setDarkMode(!darkMode)}>
+                <BsFillMoonStarsFill className="cursor-pointer text-2xl text-dark-purple"/>
+              </button>
+              <button>
                 <a className="bg-gradient-to-r from-raspberry to-red text-white px-4 py-2 rounded-md ml-8 mr-3" href="./Resume.pdf" target="_blank">Resume</a>
-              </li>
-            </ul>
+              </button>
+            </div>
           </nav>
           <div class="grid align-middle lg:grid-cols-2 gap-10 md:grid-cols-2 grid-cols-1">
             <div class="align-middle self-center">
@@ -42,8 +42,8 @@ export default function Home() {
                 <p className="text-md py-5 leading-8 text-gray md:text-xl max-w-xl mx-auto">Software Engineer with a passion to design and build meaningful products that have a positive impact.</p>
               </div>
               <div className="text-3xl flex justify-center gap-10 py-0 text-light-blue">
-                <AiFillGithub/>
-                <AiFillLinkedin/>
+                <a href="https://github.com/anujinm" target="_blank"><AiFillGithub/></a>
+                <a href="https://www.linkedin.com/in/anujin-munkhbat" target="_blank"><AiFillLinkedin/></a>
               </div>
             </div>
               <div className="mx-auto bg-gradient-to-b from-beige rounded-full">

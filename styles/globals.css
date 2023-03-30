@@ -15,6 +15,9 @@
     @apply rounded-full bg-white text-rosy dark:text-red border-4 w-16 h-16 absolute left-1/2 -translate-x-1/2 -translate-y-4 transform flex items-center justify-center;
   }
 
+  .timeline-item-buffer {
+    @apply order-1 lg:w-5/12 sm:w-fit md:w-fit;
+  }
   .timeline-item-content {
     @apply order-1 lg:w-5/12 w-fit px-1 py-4 text-left ml-10;
   }
