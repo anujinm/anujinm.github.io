@@ -138,7 +138,7 @@ export default function Home() {
                         <div class="mt-1 text-sm md:text-base leading-snug text-gray dark:text-white">
                           <ul>
                             <li class="py-1">Learned and applied new skills in the internship project including creating a web app for cooking recipes and measurement conversions.</li>
-                            <li class="py-1">Contributed to various client projects such as websites and banners upon request</li>
+                            <li class="py-1">Contributed to various client projects such as websites and banners upon request.</li>
                           </ul>
                           <p class="italic font-semibold my-1">VueJS, JavaScript, NodeJS, MySQL, AWS</p>
                         </div>
