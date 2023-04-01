@@ -27,6 +27,7 @@ module.exports = {
         'beige': '#e5dcc5',
         'light-yellow': '#efcb68',
         'dark-yellow': '#edae49',
+        'light-beige': '#dfe0e2',
       },
       fontFamily: {
         burtons: "burtons",
