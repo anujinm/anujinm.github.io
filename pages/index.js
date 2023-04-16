@@ -11,7 +11,54 @@ import ffour from '../public/14four-logo.png'
 import { useState } from 'react'
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  // const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Sending...')
+
+    let data = {
+      name,
+      email, 
+      message
+    }
+
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then((res) => {
+      console.log('Response received')
+      if (res.status === 200) {
+        console.log('Response succeeded!')
+        setSubmitter(true)
+        setFullname('')
+        setEmail('')
+        setMessage('')
+      }
+    })
+    // try {
+    //   const response = await fetch('/api/contact', {
+    //     method: 'post',
+    //     body: new URLSearchParams(data),
+    //   });
+    //   if (!response.ok) {
+    //     throw new Error(`Invalid response: ${response.status}`);
+    //   }
+    //   alert('Thanks for contacting me, I will get back to you soon!');
+    // } catch (err) {
+    //   console.error(err);
+    //   alert("We can't submit the form, try again later?");
+    // }
+  }
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -30,7 +77,7 @@ export default function Home() {
                   <BsFillMoonStarsFill className="cursor-pointer text-2xl text-dark-purple"/>
                 </button>
                 <button>
-                  <a className="bg-gradient-to-r from-raspberry to-red text-white px-4 py-2 rounded-md ml-8 mr-3" href="./Resume.pdf" target="_blank">Resume</a>
+                  <a className="border-solid border-2 border-raspberry text-gray-purple px-4 py-2 rounded-md ml-8 mr-3" href="./Resume.pdf" target="_blank">Resume</a>
                 </button>
               </div>
             </nav>
@@ -215,6 +262,55 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          {/* Contact form */}
+          <section class="mt-24 px-8 md:px-12 lg:px-16 py-16 mx-auto bg-beige dark:bg-black-blue rounded-2xl grid gap-8 grid-cols-1 md:grid-cols-2 bg-gray-100 text-gray-purple dark:text-light-blue">
+            <div>
+              <h2 class="text-4xl lg:text-5xl font-bold leading-tight dark:text-raspberry">Lets get in touch!</h2>
+              <div class="dark:text-light-blue mt-8 pr-12">Interested in working together? We should queue up a time to chat. I’ll buy the coffee.</div>
+            </div>
+            <form class="" onSubmit={handleSubmit}>
+              <div>
+                <span class="uppercase text-sm font-bold">Full Name</span>
+                <input class="w-full dark:bg-light-beige mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"                                  value={fullname}
+                  onChange={(e) => {
+                    setFullname(e.target.value);
+                  }} 
+                  name="name"
+                  type="text" 
+                  placeholder=""/>
+              </div>
+              <div class="mt-8">
+                <span class="uppercase text-sm font-bold">Email</span>
+                <input class="w-full dark:bg-light-beige mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  type="email"
+                  name="email"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}/>
+              </div>
+              <div class="mt-8">
+                <span class="uppercase text-sm font-bold">Message</span>
+                <textarea
+                  class="w-full h-32 dark:bg-light-beige text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  name="message"
+                  value={message}
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                  }}></textarea>
+              </div>
+              <div class="mt-8">
+                <button
+                  class="uppercase text-sm font-bold tracking-wide border-solid border-2 border-raspberry dark:text-light-beige p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+                  type="submit">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </section>
+
+          {/* Footer */}
           <div class="justify-center my-10 md:mt-20 md:mb-5 text-gray">
             <p class="py-3 flex justify-center font-thin">Copyright 2023. Made by Anujin Munkhbat</p>
             
