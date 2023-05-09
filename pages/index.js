@@ -9,6 +9,7 @@ import logos from '../public/logos.png'
 import codeu from '../public/codeu.png'
 import ffour from '../public/14four-logo.png'
 import { useState } from 'react'
+import MapChart from "./MapChart";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -47,12 +48,12 @@ export default function Home() {
                 </div>
               </div>
                 <div className="mx-auto bg-gradient-to-b from-beige dark:from-black-blue rounded-full">
-                  <Image alt="" src={avatar} class="object-contain lg:w-fit lg:h-fit lg:pb-4 md:w-fit md:h-fit md:pt-6 h-64 w-64"/>
+                  <Image alt="avatar" src={avatar} class="object-contain lg:w-fit lg:h-fit lg:pb-4 md:w-fit md:h-fit md:pt-6 h-64 w-64"/>
                 </div>
             </div>
           </section>
        
-          {/* Second Page */}
+          {/* Second Page - Professional Journey*/}
 
           <section class="md:my-10 lg:w-fit bg-beige dark:bg-black-blue rounded-2xl shadow-lg hover:drop-shadow-2xl">
             <div class="md:flex-row md:block lg:flex lg:justify-between lg:items-start lg:py-7">
@@ -86,7 +87,7 @@ export default function Home() {
                           </div>
                         </div>
                         <div class="timeline-img-container md:timeline-img-container-md lg:timeline-img-container-lg">
-                          <Image class="lg:h-8 lg:w-8 h-6 w-6" src={logos}/>
+                          <Image class="lg:h-8 lg:w-8 h-6 w-6" src={logos} alt="logos"/>
                         </div>
                       </div>
 
@@ -106,7 +107,7 @@ export default function Home() {
                           </div>
                         </div>
                         <div class="timeline-img-container  md:timeline-img-container-md lg:timeline-img-container-lg">
-                          <Image class="lg:h-8 lg:w-8 h-6 w-6" src={faithlife} />
+                          <Image class="lg:h-8 lg:w-8 h-6 w-6" src={faithlife} alt="fl" />
                         </div>
                       </div>
 
@@ -123,7 +124,7 @@ export default function Home() {
                           </div>
                         </div>
                         <div class="timeline-img-container md:timeline-img-container-md lg:timeline-img-container-lg">
-                          <Image class="lg:h-8 lg:w-8 h-6 w-6" src={olive}/>
+                          <Image class="lg:h-8 lg:w-8 h-6 w-6" src={olive} alt="olive"/>
                         </div>
                       </div>
 
@@ -144,7 +145,7 @@ export default function Home() {
                           </div>
                         </div>
                         <div class="timeline-img-container md:timeline-img-container-md lg:timeline-img-container-lg">
-                          <Image class="lg:h-8 lg:w-8 h-6 w-6" src={ffour} />
+                          <Image class="lg:h-8 lg:w-8 h-6 w-6" src={ffour} alt="ff" />
                         </div>
                       </div>
 
@@ -164,7 +165,7 @@ export default function Home() {
                           </div>
                       </div>
                         <div class="timeline-img-container md:timeline-img-container-md lg:timeline-img-container-lg">
-                          <Image class="lg:h-8 lg:w-8 h-6 w-6" src={codeu} />
+                          <Image class="lg:h-8 lg:w-8 h-6 w-6" src={codeu} alt="codeu"/>
                         </div>
                       </div>
                     </div>
@@ -174,7 +175,20 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Third page */}
+          {/* About me */}
+          <section class="my-5 md:my-10 bg-beige dark:bg-black-blue rounded-2xl">
+            <div class="p-4 md:justify-center md:flex">
+              <h1 className="w-1/3 text-5xl text-left font-bold pt-20 pl-8 dark:text-white">My Personal Journey</h1>
+              <h4 class="w-fit md:w-2/3 justify-center pt-4 md:pt-20 lg:pt-24 px-8 md:px-28 md:text-right italic font-semibold text-sm md:text-lg text-dark-purple dark:text-white">
+                 I believe the best education is gained through experience. Join me on my journey as I uncover new cultures, gain fresh insights, and leave my mark on this world map. 
+              </h4>
+            </div>
+            <div class="mr-4 md:mr-28">
+              <MapChart />
+            </div>
+          </section>
+          
+          {/* Third page  - Testimonials */}
           <section class="my-20 dark:bg-black-blue hidden rounded-2xl">
             <h3 className="text-2xl font-bold py-10 pl-8 flex justify-center dark:text-white">Testimonials</h3>
             <div class="grid grid-cols-2 md:grid-cols-4">
@@ -215,6 +229,8 @@ export default function Home() {
               </div>
             </div>
           </section>
+         
+          {/* Footer */}
           <div class="justify-center my-10 md:mt-20 md:mb-5 text-gray">
             <p class="py-3 flex justify-center font-thin">Copyright 2023. Made by Anujin Munkhbat</p>
             
