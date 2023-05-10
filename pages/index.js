@@ -8,6 +8,9 @@ import olive from '../public/olive.jpg'
 import logos from '../public/logos.png'
 import codeu from '../public/codeu.png'
 import ffour from '../public/14four-logo.png'
+import dev from '../public/dev.png'
+import explorer from '../public/explorer.png'
+import entrepreneur from '../public/entrepreneur.png'
 import { useState } from 'react'
 import MapChart from "./MapChart";
 
@@ -24,8 +27,8 @@ export default function Home() {
       <main className="bg-beige lg:p-10 md:p-20 lg:p-30 dark:bg-black-blue">
         <div className="bg-white dark:bg-light-beige md:p-10 shadow-xl drop-shadow-2xl w-fit lg:rounded-2xl sm:rounded-none md:my-0">
           <section className="">
-            <nav className="py-10 mb-12 flex justify-between">
-              <h1 class="text-xl font-burtons collapse md:visible">DevelopedByAnu</h1>
+            <nav className="py-10 mb-12 flex justify-end">
+              {/* <h1 class="text-xl font-burtons collapse md:visible">DevelopedByAnu</h1> */}
               <div className="flex items-center">
                 <button onClick={() => setDarkMode(!darkMode)}>
                   <BsFillMoonStarsFill className="cursor-pointer text-2xl text-dark-purple"/>
@@ -172,6 +175,22 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </section>
+
+          {/* Middle filler */}
+          <section class="columns-3 justify-between my-28">
+            <div className="flex flex-col gap-4 items-center">
+              <Image src={dev} alt="developer"/>
+              <h2 className="">Developer</h2>
+            </div>
+            <div className="flex flex-col items-center gap-4 border-x-2 border-raspberry dark:border-black-blue">
+              <Image src={explorer} alt="explorer"/>
+              <h2>Explorer</h2>
+            </div>
+            <div className="flex flex-col gap-4 items-center">
+              <Image src={entrepreneur} alt="entrepreneur" height="50"/>
+              <h2>Entrepreneur</h2>
             </div>
           </section>
 
