@@ -11,6 +11,7 @@ import ffour from '../public/14four-logo.png'
 import dev from '../public/dev.png'
 import explorer from '../public/explorer.png'
 import entrepreneur from '../public/entrepreneur.png'
+import business from '../public/business.png'
 import { useState } from 'react'
 import MapChart from "./MapChart";
 
@@ -182,15 +183,15 @@ export default function Home() {
           <section class="columns-3 justify-between my-20 md:my-28">
             <div className="flex flex-col gap-4 items-center">
               <Image src={dev} alt="developer"/>
-              <h2 className="">Developer</h2>
+              <h2 className="text-black-blue">Developer</h2>
             </div>
-            <div className="flex flex-col items-center gap-4 border-x-2 border-raspberry dark:border-black-blue">
+            <div className="flex flex-col items-center gap-4 border-x-2 border-raspberry">
               <Image src={explorer} alt="explorer"/>
-              <h2>Explorer</h2>
+              <h2 className="text-black-blue">Explorer</h2>
             </div>
             <div className="flex flex-col gap-4 items-center">
               <Image src={entrepreneur} alt="entrepreneur" height="50"/>
-              <h2>Entrepreneur</h2>
+              <h2 className="text-black-blue">Entrepreneur</h2>
             </div>
           </section>
 
@@ -204,6 +205,10 @@ export default function Home() {
             </div>
             <div class="mr-4 md:mr-28">
               <MapChart />
+            </div>
+              
+            <div class="">
+              <Image src={business} alt="banner"/>
             </div>
           </section>
           
