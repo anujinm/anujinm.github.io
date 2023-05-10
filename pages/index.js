@@ -206,10 +206,6 @@ export default function Home() {
             <div class="mr-4 md:mr-28">
               <MapChart />
             </div>
-              
-            <div class="">
-              <Image src={business} alt="banner"/>
-            </div>
           </section>
           
           {/* Third page  - Testimonials */}
