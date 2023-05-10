@@ -42,7 +42,7 @@ export default function Home() {
               <div class="align-middle self-center">
                 <div className="text-center p-10">
                   <h2 className="text-5xl py-2 text-red dark:text-raspberry font-medium md:text-5xl">Anujin Munkhbat</h2>
-                  <h3 className="text-2xl py-2 text-gray md:text-sm">Developer | Designer | Entrepreneur</h3>
+                  <h3 className="text-sm py-2 text-gray">Developer | Designer | Entrepreneur</h3>
                   <p className="text-md py-5 leading-8 text-gray md:text-xl max-w-xl mx-auto">Software Engineer with a passion to design and build meaningful products that have a positive impact.</p>
                 </div>
                 <div className="text-3xl flex justify-center gap-10 py-0 text-light-blue">
@@ -179,7 +179,7 @@ export default function Home() {
           </section>
 
           {/* Middle filler */}
-          <section class="columns-3 justify-between my-28">
+          <section class="columns-3 justify-between my-20 md:my-28">
             <div className="flex flex-col gap-4 items-center">
               <Image src={dev} alt="developer"/>
               <h2 className="">Developer</h2>
@@ -198,7 +198,7 @@ export default function Home() {
           <section class="my-5 md:my-10 bg-beige dark:bg-black-blue rounded-2xl">
             <div class="p-4 md:justify-center md:flex">
               <h1 className="w-1/3 text-5xl text-left font-bold pt-20 pl-8 dark:text-white">My Personal Journey</h1>
-              <h4 class="w-fit md:w-2/3 justify-center pt-4 md:pt-20 lg:pt-24 px-8 md:px-28 md:text-right italic font-semibold text-sm md:text-lg text-dark-purple dark:text-white">
+              <h4 class="w-fit md:w-2/3 justify-center pt-4 md:pt-20 lg:pt-24 px-8 md:px-28 md:text-right italic font-semibold text-sm md:text-lg text-dark-purple dark:text-light-blue">
                  I believe the best education is gained through experience. Join me on my journey as I uncover new cultures, gain fresh insights, and leave my mark on this world map. 
               </h4>
             </div>
