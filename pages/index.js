@@ -11,7 +11,7 @@ import ffour from '../public/14four-logo.png'
 import dev from '../public/dev.png'
 import explorer from '../public/explorer.png'
 import entrepreneur from '../public/entrepreneur.png'
-import business from '../public/business.png'
+import phone from '../public/mobile.png'
 import { useState } from 'react'
 import MapChart from "./MapChart";
 
@@ -205,6 +205,32 @@ export default function Home() {
             </div>
             <div class="mr-4 md:mr-28">
               <MapChart />
+            </div>
+              
+            <div class="flex flex-col md:flex-row md:px-12 pb-20">
+              <Image src={phone} alt="banner" class="align-middle pl-0 lg:pl-20 object-contain w-2/3 lg:max-w-md lg:max-h-150"/>
+
+              <div class="dark:text-white pl-5 lg:pl-20 pt-16 align-middle md:w-1/2">
+                <p class="text-xs lg:text-2xl text-dark-purple dark:text-white">
+                  As both an entrepreneur and small-business owner, I take on a diverse range of responsibilities,
+                   from strategic planning to day-to-day operations.</p>
+                <p class="text-xs lg:text-2xl text-dark-purple dark:text-white">  With a multifaceted skill set and a passion for 
+                   success, I am able to wear many hats and effectively manage all aspects of my business.</p>
+                <h3 class="text-3xl text-dark-purple dark:text-white hidden">As an entrepreneur and a small-business owner, I wear many hats:</h3>
+                <ul class="list-none py-4 md:py-8 text-left text-dark-purple dark:text-light-blue text-xs lg:text-lg font-semibold">
+                  <li class="py-1">I am a</li>
+                  <li class="py-1">Brand Strategist</li>
+                  <li class="">Creative Director</li>
+                  <li class="py-1">Content Creator</li>
+                  <li class="">Digital Marketing Specialist</li>
+                </ul>
+                
+                <p class="text-xs lg:text-lg"> Through my diverse skill set and experience, I aim to create a strong and authentic brand identity that resonates
+                    with my audience.</p>
+                <button class="my-10">
+                  <a className="bg-gradient-to-r from-raspberry to-red text-white px-4 py-2 rounded-md" href="https://ellys-style.myshopify.com/" target="_blank">Visit Store</a>
+                </button>
+              </div>
             </div>
           </section>
           
