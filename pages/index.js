@@ -12,6 +12,7 @@ import dev from '../public/dev.png'
 import explorer from '../public/explorer.png'
 import entrepreneur from '../public/entrepreneur.png'
 import phone from '../public/mobile.png'
+import chat from '../public/chat.png'
 import { useState } from 'react'
 import MapChart from "./MapChart";
 
@@ -41,7 +42,7 @@ export default function Home() {
             </nav>
             <div class="grid align-middle lg:grid-cols-2 gap-10 md:grid-cols-2 grid-cols-1">
               <div class="align-middle self-center">
-                <div className="text-center p-10">
+                <div className="text-center p-2 md:p-10">
                   <h2 className="text-5xl py-2 text-red dark:text-raspberry font-medium md:text-5xl">Anujin Munkhbat</h2>
                   <h3 className="text-sm py-2 text-gray">Developer | Designer | Entrepreneur</h3>
                   <p className="text-md py-5 leading-8 text-gray md:text-xl max-w-xl mx-auto">Software Engineer with a passion to design and build meaningful products that have a positive impact.</p>
@@ -206,11 +207,15 @@ export default function Home() {
             <div class="mr-4 md:mr-28">
               <MapChart />
             </div>
-              
-            <div class="flex flex-col md:flex-row md:px-12 pb-20">
-              <Image src={phone} alt="banner" class="align-middle pl-0 lg:pl-20 object-contain w-2/3 lg:max-w-md lg:max-h-150"/>
 
-              <div class="dark:text-white pl-5 lg:pl-20 pt-16 align-middle md:w-1/2">
+            <div class="flex justify-center pb-10 md:pb-32">
+              <div class=" border-b-2 border-raspberry justify-center w-1/3"/>
+            </div>  
+
+            <div class="flex flex-col md:flex-row md:px-12 pb-20">
+              <Image src={phone} alt="mobile" class="align-middle self-center lg:pl-20 object-contain w-2/3 lg:max-w-md lg:max-h-150"/>
+
+              <div class="dark:text-white px-10 lg:pl-20 pt-16 align-middle md:w-1/2">
                 <p class="text-xs lg:text-2xl text-dark-purple dark:text-white">
                   As both an entrepreneur and small-business owner, I take on a diverse range of responsibilities,
                    from strategic planning to day-to-day operations.</p>
@@ -276,6 +281,16 @@ export default function Home() {
             </div>
           </section>
          
+          {/* Contact form */}
+          <section class="mt-12 px-8 md:px-12 lg:px-16 pt-16 mx-auto bg-beige dark:bg-black-blue rounded-2xl grid gap-8 grid-cols-1 md:grid-cols-2 bg-gray-100 text-gray-purple dark:text-light-blue">
+            <div>
+              <h2 class="text-4xl lg:text-5xl font-bold leading-tight dark:text-raspberry">Lets get in touch!</h2>
+              <p class="dark:text-light-blue mt-8 pr-12">Interested in working together? Feel free to reach out via  
+              <a class="" href="https://www.linkedin.com/in/anujin-munkhbat" target="_blank"> LinkedIn</a> or email: anujin.munhbat@gmail.com</p>
+            </div>
+            <Image src={chat} alt="conversation" />
+          </section>
+
           {/* Footer */}
           <div class="justify-center my-10 md:mt-20 md:mb-5 text-gray">
             <p class="py-3 flex justify-center font-thin">Copyright 2023. Made by Anujin Munkhbat</p>
