@@ -284,7 +284,7 @@ export default function Home() {
           {/* Contact form */}
           <section class="mt-12 px-8 md:px-12 lg:px-16 pt-16 mx-auto bg-beige dark:bg-black-blue rounded-2xl grid gap-8 grid-cols-1 md:grid-cols-2 bg-gray-100 text-gray-purple dark:text-light-blue">
             <div>
-              <h2 class="text-4xl lg:text-5xl font-bold leading-tight dark:text-raspberry">Let's get in touch!</h2>
+              <h2 class="text-4xl lg:text-5xl font-bold leading-tight dark:text-raspberry">Let&apos;s get in touch!</h2>
               <p class="dark:text-light-blue mt-8 pr-12">Interested in working together? Feel free to reach out via  
               <a class="" href="https://www.linkedin.com/in/anujin-munkhbat" target="_blank"> LinkedIn</a> or email: anujin.munhbat@gmail.com</p>
             </div>
