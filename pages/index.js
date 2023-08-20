@@ -79,7 +79,7 @@ export default function Home() {
                         <div class="timeline-item-buffer"></div>
                         <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-left-lg">
                           <h4 class="mb-3 font-bold text-lg md:text-2xl dark:text-white">Software Engineer ll</h4>
-                          <p class="text-gray-purple dark:text-light-blue text-md">Faithlife, Logos Desktop Team</p>
+                          <p class="text-gray-purple dark:text-light-blue text-md">Logos, Desktop Team</p>
                           <p class="mb-3 text-base text-red dark:text-red">March 2020 - Current</p>
 
                           <div class="mt-1 text-sm md:text-base text-gray dark:text-white">
@@ -100,8 +100,8 @@ export default function Home() {
                       <div class="mb-8 flex justify-between items-center w-full right-timeline">
                         <div class="timeline-item-buffer"></div>
                         <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-right-lg">
-                          <h4 class="mb-3 font-bold text-lg md:text-2xl dark:text-white">Software Engineering Intern</h4>
-                          <p class="text-gray-purple dark:text-light-blue text-md">Faithlife, Faithlife.com Team</p>
+                          <h4 class="mb-3 font-bold text-lg md:text-2xl dark:text-white">Sosftware Engineering Intern</h4>
+                          <p class="text-gray-purple dark:text-light-blue text-md">Logos, Faithlife.com Team</p>
                           <p class="mb-3 text-base text-red dark:text-red">Summer 2019</p>
                           <div class="mt-1 text-sm md:text-base leading-snug text-gray dark:text-white">
                             <ul>
@@ -284,7 +284,7 @@ export default function Home() {
           {/* Contact form */}
           <section class="mt-12 px-8 md:px-12 lg:px-16 pt-16 mx-auto bg-beige dark:bg-black-blue rounded-2xl grid gap-8 grid-cols-1 md:grid-cols-2 bg-gray-100 text-gray-purple dark:text-light-blue">
             <div>
-              <h2 class="text-4xl lg:text-5xl font-bold leading-tight dark:text-raspberry">Lets get in touch!</h2>
+              <h2 class="text-4xl lg:text-5xl font-bold leading-tight dark:text-raspberry">Let's get in touch!</h2>
               <p class="dark:text-light-blue mt-8 pr-12">Interested in working together? Feel free to reach out via  
               <a class="" href="https://www.linkedin.com/in/anujin-munkhbat" target="_blank"> LinkedIn</a> or email: anujin.munhbat@gmail.com</p>
             </div>
