@@ -68,7 +68,7 @@ export default function Home() {
           <section class="md:my-10 bg-beige dark:bg-black-blue rounded-2xl shadow-lg hover:drop-shadow-2xl">
             <div class="md:flex-row md:block lg:flex lg:justify-between lg:items-start lg:py-7">
               <div class="sticky top-0 p-4 md:justify-center md:flex">
-                <h1 className="text-5xl font-bold md:py-20 py-2 pl-8 flex justify-center">My Professional Journey</h1>
+                <h1 className="text-5xl text-black font-bold md:py-20 py-2 pl-8 flex justify-center">My Professional Journey</h1>
               </div>
               <div className="flex-grow p-4 md:py-0">
                 <div className="sticky">
@@ -83,7 +83,7 @@ export default function Home() {
                       <div class="mb-8 flex justify-between flex-row-reverse items-center w-full right-timeline lg:left-timeline">
                         <div class="timeline-item-buffer"></div>
                         <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-left-lg">
-                          <h4 class="mb-3 font-bold text-lg md:text-2xl ">Software Engineer ll</h4>
+                          <h4 class="mb-3 font-bold text-lg text-dark-purple md:text-2xl ">Software Engineer ll</h4>
                           <p class="text-gray-purple dark:text-light-blue text-md">Logos, Desktop Team</p>
                           <p class="mb-3 text-base text-red dark:text-red">March 2020 - Current</p>
 
@@ -105,7 +105,7 @@ export default function Home() {
                       <div class="mb-8 flex justify-between items-center w-full right-timeline">
                         <div class="timeline-item-buffer"></div>
                         <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-right-lg">
-                          <h4 class="mb-3 font-bold text-lg md:text-2xl ">Sosftware Engineering Intern</h4>
+                          <h4 class="mb-3 font-bold text-dark-purple text-lg md:text-2xl ">Sosftware Engineering Intern</h4>
                           <p class="text-gray-purple dark:text-light-blue text-md">Logos, Faithlife.com Team</p>
                           <p class="mb-3 text-base text-red dark:text-red">Summer 2019</p>
                           <div class="mt-1 text-sm md:text-base leading-snug text-gray ">
@@ -125,7 +125,7 @@ export default function Home() {
                       <div class="mb-8 flex justify-between flex-row-reverse items-center w-full right-timeline lg:left-timeline">
                         <div class="timeline-item-buffer"></div>
                         <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-left-lg">
-                          <h4 class="mb-3 font-bold text-lg md:text-2xl ">iOS Development Intern</h4>
+                          <h4 class="mb-3 font-bold text-dark-purple text-lg md:text-2xl ">iOS Development Intern</h4>
                           <p class="text-gray-purple dark:text-light-blue text-md">Olive Tree Bible Software</p>
                           <p class="mb-3 text-base text-red dark:text-red">Sept 2018 - May 2019</p>
                           <div class="mt-1 text-sm md:text-base leading-snug text-gray ">
@@ -143,7 +143,7 @@ export default function Home() {
                         <div class="timeline-item-buffer"></div>
                         <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-right-lg">
                           
-                          <h4 class="mb-3 font-bold text-lg md:text-2xl ">Web Development Intern</h4>
+                          <h4 class="mb-3 font-bold text-dark-purple text-lg md:text-2xl ">Web Development Intern</h4>
                           <p class="text-gray-purple dark:text-light-blue text-md">14Four</p>
                           <p class="mb-3 text-base text-red dark:text-red">May - Aug 2018</p>
                           <div class="mt-1 text-sm md:text-base leading-snug text-gray ">
@@ -163,7 +163,7 @@ export default function Home() {
                       <div class="mb-8 flex justify-between flex-row-reverse items-center w-full right-timeline lg:left-timeline">
                         <div class="timeline-item-buffer"></div>
                         <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-left-lg">
-                          <h4 class="mb-3 font-bold text-lg md:text-2xl ">Google CodeU Program Alumna</h4>
+                          <h4 class="mb-3 font-bold text-dark-purple text-lg md:text-2xl ">Google CodeU Program Alumna</h4>
                           <p class="text-gray-purple dark:text-light-blue text-md">Google Developers</p>
                           <p class="mb-3 text-base text-red dark:text-red">Feb - May 2018</p>
                           <div class="mt-1 text-sm md:text-base leading-snug text-gray ">
@@ -204,7 +204,7 @@ export default function Home() {
           {/* About me */}
           <section class="my-5 md:my-10 bg-beige dark:bg-black-blue rounded-2xl">
             <div class="p-4 md:justify-center md:flex">
-              <h1 className="w-1/3 text-5xl text-left font-bold pt-20 pl-8">My Personal Journey</h1>
+              <h1 className="w-1/3 text-5xl text-left text-black font-bold pt-20 pl-8">My Personal Journey</h1>
               <h4 class="w-fit md:w-2/3 justify-center pt-4 md:pt-20 lg:pt-24 px-8 md:px-28 md:text-right uppercase font-bold text-sm md:text-lg text-raspberry dark:text-light-blue">
                  I believe the best education is gained through experience. Join me on my journey as I uncover new cultures, gain fresh insights, and leave my mark on this world map. 
               </h4>
