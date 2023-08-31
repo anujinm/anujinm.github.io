@@ -41,17 +41,17 @@ export default function Home() {
                 </button>
               </div>
             </nav>
-            <div class="grid align-middle gap-1 md:grid-cols-2 grid-cols-1">
+            <div class="grid align-middle gap-1 md:grid-cols-2 grid-cols-1 py-20 md:py-0">
               <div className="justify-center md:hidden flex">
                 <Image alt="avatar" src={headshot} class="rounded-t-full justify-center w-1/2"/>
               </div>
               <div class="align-middle self-center pb-2">
-                <div className="text-center ml-10 md:p-10">
+                <div className="text-center md:ml-10 md:p-10">
                   <h2 className="xl:text-9xl lg:text-7xl md:text-4xl text-5xl py-2 text-black-blue dark:text-raspberry font-medium">Anujin Munkhbat</h2>
                   <h3 className="uppercase font-bold lg:text-sm text-xs tracking-wider py-2 text-raspberry">Developer | Designer | Entrepreneur</h3>
                   <p className="text-md py-5 leading-8 text-gray lg:text-xl md:text-sm max-w-xl mx-auto">Software Engineer and a small business owner with a passion to design and build meaningful products that have a positive impact.</p>
                 </div>
-                <div className="text-3xl flex justify-center gap-10 py-0">
+                <div className="text-3xl flex justify-center gap-10 py-0 text-black">
                   <a href="./Resume.pdf" target="_blank" class="w-6 mt-1"><Image src={resume} alt="resume" /></a>
                   <a href="https://github.com/anujinm" target="_blank"><AiFillGithub/></a>
                   <a href="https://www.linkedin.com/in/anujin-munkhbat" target="_blank"><AiFillLinkedin/></a>
@@ -68,7 +68,7 @@ export default function Home() {
           <section class="md:my-10 bg-beige dark:bg-black-blue rounded-2xl shadow-lg hover:drop-shadow-2xl">
             <div class="md:flex-row md:block lg:flex lg:justify-between lg:items-start lg:py-7">
               <div class="sticky top-0 p-4 md:justify-center md:flex">
-                <h1 className="text-5xl font-bold md:py-20 py-2 pl-8 flex justify-center dark:text-white">My Professional Journey</h1>
+                <h1 className="text-5xl font-bold md:py-20 py-2 pl-8 flex justify-center">My Professional Journey</h1>
               </div>
               <div className="flex-grow p-4 md:py-0">
                 <div className="sticky">
@@ -83,11 +83,11 @@ export default function Home() {
                       <div class="mb-8 flex justify-between flex-row-reverse items-center w-full right-timeline lg:left-timeline">
                         <div class="timeline-item-buffer"></div>
                         <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-left-lg">
-                          <h4 class="mb-3 font-bold text-lg md:text-2xl dark:text-white">Software Engineer ll</h4>
+                          <h4 class="mb-3 font-bold text-lg md:text-2xl ">Software Engineer ll</h4>
                           <p class="text-gray-purple dark:text-light-blue text-md">Logos, Desktop Team</p>
                           <p class="mb-3 text-base text-red dark:text-red">March 2020 - Current</p>
 
-                          <div class="mt-1 text-sm md:text-base text-gray dark:text-white">
+                          <div class="mt-1 text-sm md:text-base text-gray ">
                               <ul class="list-none">
                                 <li class="py-1">Led the development of a major feature for the latest release of the Logos app, which was highly valued by customers and contributed to a record-breaking increase in profits.</li>
                                 <li class="py-1">Maintained and implemented software features on multiple platforms, including macOS, Windows, and the web, ensuring seamless user experience and functionality.</li>
@@ -105,10 +105,10 @@ export default function Home() {
                       <div class="mb-8 flex justify-between items-center w-full right-timeline">
                         <div class="timeline-item-buffer"></div>
                         <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-right-lg">
-                          <h4 class="mb-3 font-bold text-lg md:text-2xl dark:text-white">Sosftware Engineering Intern</h4>
+                          <h4 class="mb-3 font-bold text-lg md:text-2xl ">Sosftware Engineering Intern</h4>
                           <p class="text-gray-purple dark:text-light-blue text-md">Logos, Faithlife.com Team</p>
                           <p class="mb-3 text-base text-red dark:text-red">Summer 2019</p>
-                          <div class="mt-1 text-sm md:text-base leading-snug text-gray dark:text-white">
+                          <div class="mt-1 text-sm md:text-base leading-snug text-gray ">
                             <ul>
                               <li class="py-1">Contributed to building and maintaining the company&apos;s flagship social web platform as a member of the Faithlife.com team, resulting in increased user engagement and retention. </li>
                               <li class="py-1">Spearheaded the integration of a new dashboard feature that streamlined access to multiple internal products.</li>
@@ -125,10 +125,10 @@ export default function Home() {
                       <div class="mb-8 flex justify-between flex-row-reverse items-center w-full right-timeline lg:left-timeline">
                         <div class="timeline-item-buffer"></div>
                         <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-left-lg">
-                          <h4 class="mb-3 font-bold text-lg md:text-2xl dark:text-white">iOS Development Intern</h4>
+                          <h4 class="mb-3 font-bold text-lg md:text-2xl ">iOS Development Intern</h4>
                           <p class="text-gray-purple dark:text-light-blue text-md">Olive Tree Bible Software</p>
                           <p class="mb-3 text-base text-red dark:text-red">Sept 2018 - May 2019</p>
-                          <div class="mt-1 text-sm md:text-base leading-snug text-gray dark:text-white">
+                          <div class="mt-1 text-sm md:text-base leading-snug text-gray ">
                             <p>Integrated new features into the app such as Siri Shortcuts, Vision Accessibility support, and ML model that leverages Natural Language Processing</p>
                             <p class="italic font-semibold my-1">Objective-C, ML</p>
                           </div>
@@ -143,10 +143,10 @@ export default function Home() {
                         <div class="timeline-item-buffer"></div>
                         <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-right-lg">
                           
-                          <h4 class="mb-3 font-bold text-lg md:text-2xl dark:text-white">Web Development Intern</h4>
+                          <h4 class="mb-3 font-bold text-lg md:text-2xl ">Web Development Intern</h4>
                           <p class="text-gray-purple dark:text-light-blue text-md">14Four</p>
                           <p class="mb-3 text-base text-red dark:text-red">May - Aug 2018</p>
-                          <div class="mt-1 text-sm md:text-base leading-snug text-gray dark:text-white">
+                          <div class="mt-1 text-sm md:text-base leading-snug text-gray ">
                             <ul>
                               <li class="py-1">Learned and applied new skills in the internship project including creating a web app for cooking recipes and measurement conversions.</li>
                               <li class="py-1">Contributed to various client projects such as websites and banners upon request.</li>
@@ -163,10 +163,10 @@ export default function Home() {
                       <div class="mb-8 flex justify-between flex-row-reverse items-center w-full right-timeline lg:left-timeline">
                         <div class="timeline-item-buffer"></div>
                         <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-left-lg">
-                          <h4 class="mb-3 font-bold text-lg md:text-2xl dark:text-white">Google CodeU Program Alumna</h4>
+                          <h4 class="mb-3 font-bold text-lg md:text-2xl ">Google CodeU Program Alumna</h4>
                           <p class="text-gray-purple dark:text-light-blue text-md">Google Developers</p>
                           <p class="mb-3 text-base text-red dark:text-red">Feb - May 2018</p>
-                          <div class="mt-1 text-sm md:text-base leading-snug text-gray dark:text-white">
+                          <div class="mt-1 text-sm md:text-base leading-snug text-gray ">
                             <ul>
                               <li class="py-1">Collaborated with a team of 4 students and a Google Software Engineer as a mentor.</li>
                               <li class="py-1">Developed a chat web application for CS college students. Integrated user profile page and served as a UI Lead</li>
@@ -204,7 +204,7 @@ export default function Home() {
           {/* About me */}
           <section class="my-5 md:my-10 bg-beige dark:bg-black-blue rounded-2xl">
             <div class="p-4 md:justify-center md:flex">
-              <h1 className="w-1/3 text-5xl text-left font-bold pt-20 pl-8 dark:text-white">My Personal Journey</h1>
+              <h1 className="w-1/3 text-5xl text-left font-bold pt-20 pl-8">My Personal Journey</h1>
               <h4 class="w-fit md:w-2/3 justify-center pt-4 md:pt-20 lg:pt-24 px-8 md:px-28 md:text-right uppercase font-bold text-sm md:text-lg text-raspberry dark:text-light-blue">
                  I believe the best education is gained through experience. Join me on my journey as I uncover new cultures, gain fresh insights, and leave my mark on this world map. 
               </h4>
@@ -217,7 +217,7 @@ export default function Home() {
               <div class=" border-b-2 border-raspberry justify-center w-1/3"/>
             </div>  
 
-            <div class="md:px-12 pb-20 lg:justify-center lg:flex">
+            <div class="md:px-12 md:pt-0 pt-10 pb-10 lg:justify-center lg:flex">
               <div class="flex justify-center">
                 <Image src={elly} alt="elly" class="align-middle place-self-center lg:w-fit w-1/2"/>
               </div>
@@ -294,7 +294,7 @@ export default function Home() {
             </div>
             <div class="grid gap-8 grid-cols-1 md:grid-cols-2">
               <div class="grid-flow-col text-center">
-                <p class="text-raspberry uppercase tracking-wider font-bold mt-8 pr-12">Interested in working together? Feel free to reach out!</p>
+                <p class="text-raspberry uppercase tracking-wider font-bold mt-8">Interested in working together? Feel free to reach out!</p>
 
                 <div class="grid-flow-row text-center md:pt-8 pt-5 font-bold uppercase md:mr-24 text-sm tracking-wider">
                   <p class="py-1">Email:</p>
