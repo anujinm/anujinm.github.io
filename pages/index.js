@@ -3,7 +3,7 @@ import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import Image from 'next/image'
 import resume from '../public/resume-icon.png'
-import headshot from '../public/headshot.png'
+import headshot from '../public/headshot.jpg'
 import faithlife from '../public/faithlife.png'
 import olive from '../public/olive.jpg'
 import logos from '../public/logos.png'
@@ -41,15 +41,16 @@ export default function Home() {
                 </button>
               </div>
             </nav>
-            <div class="grid align-middle gap-1 md:grid-cols-2 grid-cols-1 py-20 md:py-0">
+            <div class="grid grid-flow-row align-middle gap-1 md:grid-cols-3 grid-cols-1 py-20 md:py-0">
+              {/* Image for mobile size */}
               <div className="justify-center md:hidden flex">
-                <Image alt="avatar" src={headshot} class="rounded-t-full justify-center w-1/2"/>
+                <Image alt="avatar" src={headshot} class="rounded-full justify-center w-1/4"/>
               </div>
-              <div class="align-middle self-center pb-2">
+              <div class="col-span-2 align-middle self-center pb-2">
                 <div className="text-center md:ml-10 md:p-10">
-                  <h2 className="xl:text-9xl lg:text-7xl md:text-4xl text-5xl py-2 text-black-blue dark:text-raspberry font-medium">Anujin Munkhbat</h2>
-                  <h3 className="uppercase font-bold lg:text-sm text-xs tracking-wider py-2 text-raspberry">Developer | Designer | Entrepreneur</h3>
-                  <p className="text-md py-5 leading-8 text-gray lg:text-xl md:text-sm max-w-xl mx-auto">Software Engineer and a small business owner with a passion to design and build meaningful products that have a positive impact.</p>
+                  <h2 className="xl:text-7xl lg:text-5xl md:text-3xl text-5xl py-2 text-black-blue dark:text-raspberry font-medium">Anujin Munkhbat</h2>
+                  <h3 className="uppercase font-bold lg:text-m text-xs tracking-wider py-2 text-raspberry">Developer | Designer | Entrepreneur</h3>
+                  <p className="text-md py-5 leading-8 text-gray lg:text-lg md:text-sm max-w-xl mx-auto">Software Engineer with a passion to design and build meaningful products that have a positive impact.</p>
                 </div>
                 <div className="text-3xl flex justify-center gap-10 py-0 text-black">
                   <a href="./Resume.pdf" target="_blank" class="w-6 mt-1"><Image src={resume} alt="resume" /></a>
@@ -57,17 +58,18 @@ export default function Home() {
                   <a href="https://www.linkedin.com/in/anujin-munkhbat" target="_blank"><AiFillLinkedin/></a>
                 </div>
               </div>
-              <div className="justify-center hidden md:flex">
-                <Image alt="avatar" src={headshot} class="rounded-t-full justify-center lg:w-4/5 md:mt-10 md:h-fit md:pt-6"/>
+              {/* Image for other sizes - on the right */}
+              <div className="justify-start hidden md:flex">
+                <Image alt="avatar" src={headshot} class="rounded-t-full justify-center lg:w-4/5 md:w-full md:mt-10 md:h-fit md:pt-6"/>
               </div>
             </div>
           </section>
        
           {/* Second Page - Professional Journey*/}
 
-          <section class="md:my-10 bg-beige dark:bg-black-blue rounded-2xl shadow-lg hover:drop-shadow-2xl">
-            <div class="md:flex-row md:block lg:flex lg:justify-between lg:items-start lg:py-7">
-              <div class="sticky top-0 p-4 md:justify-center md:flex">
+          <section className="md:my-10 bg-beige dark:bg-black-blue rounded-2xl shadow-lg hover:drop-shadow-2xl">
+            <div className="md:flex-row md:block lg:flex lg:justify-between lg:items-start lg:py-7">
+              <div className="sticky top-0 p-4 md:justify-center md:flex">
                 <h1 className="text-5xl text-black font-bold md:py-20 py-2 pl-8 flex justify-center">My Professional Journey</h1>
               </div>
               <div className="flex-grow p-4 md:py-0">
@@ -91,9 +93,9 @@ export default function Home() {
                               <ul class="list-none">
                                 <li class="py-1">Led the development of a major feature for the latest release of the Logos app, which was highly valued by customers and contributed to a record-breaking increase in profits.</li>
                                 <li class="py-1">Maintained and implemented software features on multiple platforms, including macOS, Windows, and the web, ensuring seamless user experience and functionality.</li>
-                                <li class="py-1">Strengthened team collaboration and improved project outcomes through effective leadership skills developed by mentoring interns and leading projects.</li>
+                                <li class="py-1">Led a year-long cross-functional project, coordinating with product, design, and QA teams for on-time delivery highly valued by customers.</li>
                               </ul>
-                            <p className="italic font-semibold my-1">C#, .NET, WPF, Objective-C, JavaScript, TypeScript, Azure, MySQL</p>
+                            <p className="italic font-semibold my-1">C#, .NET, WPF, Objective-C, JavaScript, TypeScript, React, Azure, MySQL</p>
                           </div>
                         </div>
                         <div class="timeline-img-container md:timeline-img-container-md lg:timeline-img-container-lg">
@@ -299,9 +301,10 @@ export default function Home() {
                 <div class="grid-flow-row text-center md:pt-8 pt-5 font-bold uppercase md:mr-24 text-sm tracking-wider">
                   <p class="py-1">Email:</p>
                   <p class="py-1">anujin.munhbat@gmail.com</p>
+                  <p class="py-1">contact@anujinm.com</p>
                   <p class="pt-3">Phone:</p>
                   <p class="py-1">+1 (509) 294-2761</p>
-                  <p class="py-8 text-raspberry lowercase">anujinm.com</p>
+                  <p class="py-8 text-raspberry lowercase">www.anujinm.com</p>
                 </div>
                 
                 <div className="text-3xl flex justify-center gap-10 py-0 md:mr-24">
