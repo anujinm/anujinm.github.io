@@ -301,9 +301,6 @@ export default function Home() {
                 <div class="grid-flow-row text-center md:pt-8 pt-5 font-bold uppercase md:mr-24 text-sm tracking-wider">
                   <p class="py-1">Email:</p>
                   <p class="py-1">anujin.munhbat@gmail.com</p>
-                  <p class="py-1">contact@anujinm.com</p>
-                  <p class="pt-3">Phone:</p>
-                  <p class="py-1">+1 (509) 294-2761</p>
                   <p class="py-8 text-raspberry lowercase">www.anujinm.com</p>
                 </div>
                 
