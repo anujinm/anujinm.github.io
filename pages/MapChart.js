@@ -17,23 +17,31 @@ const markers = [
   { markerOffset: 15, name: "Ukraine", coordinates: [31, 53.5] },
   { markerOffset: 15, name: "Russia", coordinates: [40, 60] },
   { markerOffset: -2, name: "Hong Kong", coordinates: [114, 25] },
-  { markerOffset: 15, name: "Canada", coordinates: [-122, 61] },
+  { markerOffset: 15, name: "Thailand", coordinates: [100, 18] },
+  { markerOffset: 15, name: "Vietnam", coordinates: [106, 14] },
+  { markerOffset: 15, name: "South Korea", coordinates: [127, 36] },
 ];
 
-const usmarkers = [
+const statemarkers = [
 	{ markerOffset: 10, markerXOffset: 5, name: "WA", coordinates: [-124, 49] },
 	{ markerOffset: 10, markerXOffset: 5, name: "OR", coordinates: [-126, 46 ] },
 	{ markerOffset: 10, markerXOffset: 7, name: "CA", coordinates: [-124, 40]},
 	{ markerOffset: 10, markerXOffset: 6,name: "ID", coordinates: [-118, 46] },
-	{ markerOffset: 10, markerXOffset: 8,name: "NV", coordinates: [-120, 42] },
+	{ markerOffset: 10, markerXOffset: 8,name: "NV", coordinates: [-123, 42] },
 	{ markerOffset: 10, markerXOffset: 8,name: "AZ", coordinates: [-118, 38] },
 	{ markerOffset: 10, markerXOffset: 8,name: "TX", coordinates: [-99, 36] },
 	{ markerOffset: 0, markerXOffset:0, name: "FL", coordinates: [-83, 30] },
-	{ markerOffset: 10, markerXOffset: 6, name: "NY", coordinates: [-75, 44] },
+	{ markerOffset: 10, markerXOffset: 6, name: "NY", coordinates: [-75, 43] },
+	{ markerOffset: 10, markerXOffset: 6, name: "NJ", coordinates: [-77, 46] },
 	{ markerOffset: 10, markerXOffset: 6, name: "MA", coordinates: [-73, 46] },
 	{ markerOffset: 10, markerXOffset: 0, name: "MI", coordinates: [-87, 46] },
 	{ markerOffset: 10, markerXOffset: 0, name: "PA", coordinates: [-77, 45] },
 	{ markerOffset: 10, markerXOffset: 7, name: "HI", coordinates: [-150, 20] },
+	{ markerOffset: 10, markerXOffset: 0, name: "CO", coordinates: [-115, 40] },
+	{ markerOffset: 15, name: "BC", coordinates: [-133, 58] },
+	{ markerOffset: 15, name: "AB", coordinates: [-123, 58] },
+	{ markerOffset: 15, name: "ON", coordinates: [-88, 54] },
+
   ];
 
 const MapChart = () => {	
@@ -63,7 +71,7 @@ const MapChart = () => {
 					</text>
 				</Marker>
 			))}
-			{usmarkers.map(({ name, coordinates, markerOffset, markerXOffset }) => (
+			{statemarkers.map(({ name, coordinates, markerOffset, markerXOffset }) => (
 				<Marker key={name} coordinates={coordinates}>
 					<g transform="scale(0.07)">
 						<path d="M 45 90 c -0.558 0 -1.011 -0.452 -1.011 -1.011 V 41.062 c 0 -0.558 0.453 -1.011 1.011 -1.011 s 1.011 0.453 1.011 1.011 v 47.927 C 46.011 89.548 45.558 90 45 90 z" fill="#b6465f" />
