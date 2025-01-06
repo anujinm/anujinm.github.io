@@ -49,7 +49,7 @@ export default function Home() {
               <div class="col-span-2 align-middle self-center pb-2">
                 <div className="text-center md:ml-10 md:p-10">
                   <h2 className="xl:text-7xl lg:text-5xl md:text-3xl text-5xl py-2 text-black-blue dark:text-raspberry font-medium">Anujin Munkhbat</h2>
-                  <h3 className="uppercase font-bold lg:text-m text-xs tracking-wider py-2 text-raspberry">Developer | Designer | Entrepreneur</h3>
+                  <h3 className="uppercase font-bold lg:text-m text-xs tracking-wider py-2 text-raspberry">Developer | Problem Solver | Explorer</h3>
                   <p className="text-md py-5 leading-8 text-gray lg:text-lg md:text-sm max-w-xl mx-auto">Software Engineer with a passion to design and build meaningful products that have a positive impact.</p>
                 </div>
                 <div className="text-3xl flex justify-center gap-10 py-0 text-black">
@@ -85,17 +85,19 @@ export default function Home() {
                       <div class="mb-8 flex justify-between flex-row-reverse items-center w-full right-timeline lg:left-timeline">
                         <div class="timeline-item-buffer"></div>
                         <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-left-lg">
-                          <h4 class="mb-3 font-bold text-lg text-dark-purple md:text-2xl ">Software Engineer ll</h4>
+                          <h4 class="mb-3 font-bold text-lg text-dark-purple md:text-2xl ">Software Engineer I & II</h4>
                           <p class="text-gray-purple dark:text-light-blue text-md">Logos, Desktop Team</p>
                           <p class="mb-3 text-base text-red dark:text-red">March 2020 - Current</p>
 
                           <div class="mt-1 text-sm md:text-base text-gray ">
                               <ul class="list-none">
-                                <li class="py-1">Led the development of a major feature for the latest release of the Logos app, which was highly valued by customers and contributed to a record-breaking increase in profits.</li>
-                                <li class="py-1">Maintained and implemented software features on multiple platforms, including macOS, Windows, and the web, ensuring seamless user experience and functionality.</li>
-                                <li class="py-1">Led a year-long cross-functional project, coordinating with product, design, and QA teams for on-time delivery highly valued by customers.</li>
+                                <li class="py-1">Led a year-long cross-functional project, coordinating with product, design, and QA teams for on-time delivery.</li>
+                                <li class="py-1">Maintained and implemented cross-functional software features on macOS, Windows, and Web.</li>
+                                <li class="py-1">Started and led the initiative to bring Accessibility to Logos on web and desktop by conducting research and implementing screen reader and keyboard navigation support for the major features.</li>
+                                <li class="py-1">Participated in cross-team efforts to provide robust on-call support and maintenance for company wide APIs and micro-services.</li>
                               </ul>
-                            <p className="italic font-semibold my-1">C#, .NET, WPF, Objective-C, JavaScript, TypeScript, React, Azure, MySQL</p>
+                              <br/>
+                            <p className="font-semibold my-1 text-xs">C#, .NET, WPF, Objective-C, JavaScript, TypeScript, React, NodeJS, HTML, CSS, Terraform, REST, Azure, MySQL, Unit/Integration Testing, Playwright, Microservices, CI/CD pipelines, JIRA, Jenkins, Git, GitHub Actions, Agile,Scrum</p>
                           </div>
                         </div>
                         <div class="timeline-img-container md:timeline-img-container-md lg:timeline-img-container-lg">
@@ -107,7 +109,7 @@ export default function Home() {
                       <div class="mb-8 flex justify-between items-center w-full right-timeline">
                         <div class="timeline-item-buffer"></div>
                         <div class="timeline-item-content md:timeline-item-content-md lg:timeline-item-content-right-lg">
-                          <h4 class="mb-3 font-bold text-dark-purple text-lg md:text-2xl ">Sosftware Engineering Intern</h4>
+                          <h4 class="mb-3 font-bold text-dark-purple text-lg md:text-2xl ">Software Engineering Intern</h4>
                           <p class="text-gray-purple dark:text-light-blue text-md">Logos, Faithlife.com Team</p>
                           <p class="mb-3 text-base text-red dark:text-red">Summer 2019</p>
                           <div class="mt-1 text-sm md:text-base leading-snug text-gray ">
@@ -115,7 +117,7 @@ export default function Home() {
                               <li class="py-1">Contributed to building and maintaining the company&apos;s flagship social web platform as a member of the Faithlife.com team, resulting in increased user engagement and retention. </li>
                               <li class="py-1">Spearheaded the integration of a new dashboard feature that streamlined access to multiple internal products.</li>
                             </ul>
-                            <p class="italic font-semibold my-1">React, JavaScript, TypeScript</p>
+                            <p class="font-semibold my-1 text-xs">React, JavaScript, TypeScript, C#</p>
                           </div>
                         </div>
                         <div class="timeline-img-container  md:timeline-img-container-md lg:timeline-img-container-lg">
@@ -132,7 +134,7 @@ export default function Home() {
                           <p class="mb-3 text-base text-red dark:text-red">Sept 2018 - May 2019</p>
                           <div class="mt-1 text-sm md:text-base leading-snug text-gray ">
                             <p>Integrated new features into the app such as Siri Shortcuts, Vision Accessibility support, and ML model that leverages Natural Language Processing</p>
-                            <p class="italic font-semibold my-1">Objective-C, ML</p>
+                            <p class="ont-semibold my-1 text-xs">Objective-C, ML</p>
                           </div>
                         </div>
                         <div class="timeline-img-container md:timeline-img-container-md lg:timeline-img-container-lg">
@@ -189,17 +191,17 @@ export default function Home() {
 
           {/* Middle filler */}
           <section class="columns-3 justify-between my-20 md:my-28">
-            <div className="flex flex-col gap-4 items-center">
-              <Image src={dev} alt="developer"/>
+            <div className="flex flex-col items-center">
+              <Image src={entrepreneur} alt="entrepreneur" height="50"/>
               <h2 className="text-black-blue">Developer</h2>
             </div>
-            <div className="flex flex-col items-center gap-4 border-x-2 border-raspberry">
-              <Image src={explorer} alt="explorer"/>
-              <h2 className="text-black-blue">Explorer</h2>
+            <div className="flex flex-col gap-4 items-center  gap-4 border-x-2 border-raspberry">
+              <Image src={dev} alt="developer"/>
+              <h2 className="text-black-blue">Problem Solver</h2>
             </div>
             <div className="flex flex-col gap-4 items-center">
-              <Image src={entrepreneur} alt="entrepreneur" height="50"/>
-              <h2 className="text-black-blue">Entrepreneur</h2>
+              <Image src={explorer} alt="explorer"/>
+              <h2 className="text-black-blue">Explorer</h2>
             </div>
           </section>
 
@@ -207,10 +209,19 @@ export default function Home() {
           <section class="my-5 md:my-10 bg-beige dark:bg-black-blue rounded-2xl">
             <div class="p-4 md:justify-center md:flex">
               <h1 className="w-1/3 text-5xl text-left text-black font-bold pt-20 pl-8">My Personal Journey</h1>
-              <h4 class="w-fit md:w-2/3 justify-center pt-4 md:pt-20 lg:pt-24 px-8 md:px-28 md:text-right uppercase font-bold text-sm md:text-lg text-raspberry dark:text-light-blue">
-                 I believe the best education is gained through experience. Join me on my journey as I uncover new cultures, gain fresh insights, and leave my mark on this world map. 
-              </h4>
+              <div class="w-fit md:w-2/3 justify-center pt-4 md:pt-20 lg:pt-24 px-8 md:px-28 md:text-right">
+                <h4 class="font-bold text-sm md:text-md text-dark-gray dark:text-light-blue">
+                  I believe the best education is gained through experience. I have a passion for discovering new places, cultures, and ideas.
+                    My curiosity and love for learning have taken me on a journey of exploration and growth.
+                </h4>
+                <h4 class="pt-4 font-bold text-sm md:text-md text-raspberry dark:text-light-blue">
+                    And I believe that this same curiosity and passion for learning are what drive me to be a better developer and problem solver.
+                </h4>
+              </div>
             </div>
+            <p class="ml-12 w-1/3 text-left text-dark-gray text-sm md:text-md">
+                This is the map of the places I have visited so far. If you have the same passion for exploration and learning, I would love to connect and hear about your adventures!
+            </p>
             <div class="mr-4 md:mr-28">
               <MapChart />
             </div>
