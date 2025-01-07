@@ -226,35 +226,14 @@ export default function Home() {
               <MapChart />
             </div>
 
-            <div class="flex justify-center pb-10 md:pb-32">
+            <div class="flex justify-center pb-10 md:pb-4">
               <div class=" border-b-2 border-raspberry justify-center w-1/3"/>
             </div>  
-
-            <div class="md:px-12 md:pt-0 pt-10 pb-10 lg:justify-center lg:flex">
-              <div class="flex justify-center">
-                <Image src={elly} alt="elly" class="align-middle place-self-center lg:w-fit w-1/2"/>
-              </div>
-
-              <div class="dark:text-white px-10 lg:pl-20 pt-16 align-middle md:w-fit">
-                <p class="text-sm lg:text-base md:text-sm text-dark-purple dark:text-white">
-                  As both an entrepreneur and small-business owner, I take on a diverse range of responsibilities,
-                   from strategic planning to day-to-day operations.</p>
-                <p class="text-sm lg:text-lg md:text-base text-dark-purple dark:text-white">  With a multifaceted skill set and a passion for 
-                   success, I am able to wear many hats and effectively manage all aspects of my business.</p>
-                <h3 class="text-xl md:text-sm text-dark-purple dark:text-white hidden">As an entrepreneur and a small-business owner, I wear many hats:</h3>
-                <ul class="list-none py-4 md:py-8 text-left text-xs lg:text-sm font-semibold uppercase">
-                  <li class="py-1 text-raspberry">Brand Strategist</li>
-                  <li class="text-raspberry">Creative Director</li>
-                  <li class="py-1 text-raspberry">Content Creator</li>
-                  <li class="text-raspberry">Digital Marketing Specialist</li>
-                </ul>
-                
-                <p class="text-xs lg:text-base text-dark-purple"> Through my diverse skill set and experience, I aim to create a strong and authentic brand identity that resonates
-                    with my audience.</p>
-                <button class="my-10">
-                  <a className="bg-gradient-to-r from-raspberry to-red text-white px-4 py-2 rounded-md" href="https://ellys-style.myshopify.com/" target="_blank">Visit Store</a>
-                </button>
-              </div>
+            <div class="flex-row pb-32">
+              <h3 class="pt-4 text-center font-bold text-md md:text-lg text-light-blue dark:text-light-blue">This Little Project</h3>
+              <h4 class="pt-4 ml-12 mr-12 text-center font-semibold text-sm md:text-md text-drak-gray dark:text-light-blue">
+                This website was born out of my desire to learn something new, in this case being Next.js and Tailwind CSS
+                </h4>
             </div>
           </section>
           
@@ -309,8 +288,8 @@ export default function Home() {
               <div class="grid-flow-col text-center">
                 <p class="text-raspberry uppercase tracking-wider font-bold mt-8">Interested in working together? Feel free to reach out!</p>
 
-                <div class="grid-flow-row text-center md:pt-8 pt-5 font-bold uppercase md:mr-24 text-sm tracking-wider">
-                  <p class="py-1">Email:</p>
+                <div class="grid-flow-row text-center md:pt-8 pt-5 font-bold  md:mr-24 text-sm tracking-wider">
+                  <p class="py-1 uppercase">Email:</p>
                   <p class="py-1">anujin.munhbat@gmail.com</p>
                   <p class="py-8 text-raspberry lowercase">www.anujinm.com</p>
                 </div>
