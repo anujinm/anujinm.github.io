@@ -190,18 +190,18 @@ export default function Home() {
           </section>
 
           {/* Middle filler */}
-          <section class="columns-3 justify-between my-20 md:my-28">
-            <div className="flex flex-col items-center">
+          <section class="columns-3 justify-between my-20 mx-2 md:my-28">
+            <div className="flex flex-col gap-4 items-center">
               <Image src={entrepreneur} alt="entrepreneur" height="50"/>
-              <h2 className="text-black-blue">Developer</h2>
+              <p className="text-sm md:text-md text-black-blue">Developer</p>
             </div>
-            <div className="flex flex-col gap-4 items-center  gap-4 border-x-2 border-raspberry">
+            <div className="flex flex-col gap-4 items-center text-center gap-4 border-x-2 border-raspberry">
               <Image src={dev} alt="developer"/>
-              <h2 className="text-black-blue">Problem Solver</h2>
+              <p className="text-sm md:text-md text-black-blue">Problem Solver</p>
             </div>
             <div className="flex flex-col gap-4 items-center">
               <Image src={explorer} alt="explorer"/>
-              <h2 className="text-black-blue">Explorer</h2>
+              <p className="text-sm md:text-md text-black-blue">Explorer</p>
             </div>
           </section>
 
@@ -219,7 +219,7 @@ export default function Home() {
                 </h4>
               </div>
             </div>
-            <p class="ml-12 w-1/3 text-left text-dark-gray text-sm md:text-md">
+            <p class="ml-12 md:w-1/3 text-left text-dark-gray text-sm md:text-md">
                 This is the map of the places I have visited so far. If you have the same passion for exploration and learning, I would love to connect and hear about your adventures!
             </p>
             <div class="mr-4 md:mr-28">
@@ -231,7 +231,7 @@ export default function Home() {
             </div>  
             <div class="flex-row pb-32">
               <h3 class="pt-4 text-center font-bold text-md md:text-lg text-light-blue dark:text-light-blue">This Little Project</h3>
-              <h4 class="pt-4 ml-12 mr-12 text-center font-semibold text-sm md:text-md text-drak-gray dark:text-light-blue">
+              <h4 class="pt-4 ml-12 mr-12 text-center font-semibold text-sm md:text-md text-dark-gray">
                 This website was born out of my desire to learn something new, in this case being Next.js and Tailwind CSS
                 </h4>
             </div>
@@ -306,7 +306,7 @@ export default function Home() {
 
           {/* Footer */}
           <div class="justify-center my-10 md:mt-20 md:mb-5 text-gray">
-            <p class="py-3 flex justify-center font-thin">Copyright 2023. Made by Anujin Munkhbat</p>
+            <p class="py-3 flex justify-center font-thin">Copyright 2024. Made by Anujin Munkhbat</p>
             
             <div className="flex justify-evenly">
               <div className="h-2 w-1/4 bg-beige dark:bg-dark-purple"></div>
